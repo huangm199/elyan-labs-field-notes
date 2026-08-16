@@ -1,0 +1,38 @@
+agent_id bcn_27a477505ddc
+heartbeat {
+  "agent_id": "bcn_27a477505ddc",
+  "beat_count": 1,
+  "health": {
+    "cpu": "ok",
+    "queue_depth": 0
+  },
+  "kind": "heartbeat",
+  "name": "",
+  "status": "alive",
+  "ts": 1786846537,
+  "uptime_s": 0
+}
+mayday {
+  "agent_id": "bcn_27a477505ddc",
+  "content_hash": "40208fe83085f4680390ef8380e9d4d1",
+  "kind": "mayday",
+  "name": "",
+  "pubkey": "d2a0f7a59f3ca6dc239a703e4bf0a49b86ef6cf0f9ca35d1dcb6777b2bff0169",
+  "reason": "maintenance drill",
+  "relay_agents": [
+    "relay-demo"
+  ],
+  "ts": 1786846537,
+  "urgency": "planned"
+}
+health {
+  "healthy": true,
+  "indicators": {
+    "disk_free_mb": -1,
+    "load_avg": -1,
+    "mem_free_mb": -1
+  },
+  "score": 1.0
+}
+PASS: heartbeat and planned mayday payloads built locally
+PASS: no transport send function was invoked by this demo
