@@ -1,0 +1,21 @@
+clawrtc 1.9.0 preflight, 2026-08-16
+Host class: Linux aarch64
+Command: clawrtc install --dry-run --wallet field-notes-demo
+
+[clawrtc] Platform: Linux | Arch: aarch64
+
+What ClawRTC reported it would do in the validated dry run:
+- Extract bundled fingerprint_checks.py and miner.py
+- Install a Python virtual environment in ~/.clawrtc/
+- Use requests as its HTTP dependency
+- When actually started, contact the configured RustChain attestation endpoint
+- Collect CPU/architecture/vendor, timing variance, cache-latency and VM-detection information for hardware attestation
+
+Final dry-run line:
+[clawrtc] DRY RUN — no files extracted, no services created.
+
+Companion regression check executed on the same Linux aarch64 host:
+PASS: clawrtc dry-run returned 0
+PASS: output explicitly reported DRY RUN
+PASS: temporary ~/.clawrtc was not created
+platform_line: [clawrtc] Platform: Linux | Arch: aarch64
